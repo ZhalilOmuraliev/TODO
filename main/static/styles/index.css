@@ -37,7 +37,7 @@ section{
 
 .create_button:active{
     border: 1px solid #447892;
-    box-shadow: #5410a1;
+    box-shadow: 2px 2px 5px 3px #5410a1;
 }
 
 .todo_container{
@@ -97,3 +97,14 @@ section{
     font-size: 18px;
     font-family: sans-serif;
 }
+
+.todo_item_header{
+    display: flex;
+    align-items: center;
+    min-height: 35px;
+}
+
+.todo_item_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;

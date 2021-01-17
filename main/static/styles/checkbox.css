@@ -27,3 +27,32 @@
     width: 25px;
     background-color: rgb(247, 232, 232));
 }
+
+.checkbox_container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+ 
+  .checkbox_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+
+  .checkbox_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
