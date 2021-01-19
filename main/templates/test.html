@@ -14,12 +14,12 @@
 
 <body>
     <section>
-
         <div class="create_container">
-            <input class="create_input" type="text" placeholder="Напишите сюда новую задачу">
-            <button class="create_button">Добавить</button>
+            <form action="{% url 'add-todo' %}" method="POST">
+                <input class="create_input" type="text" placeholder="Напишите сюда новую задачу" name="todo-text">
+                <button class="create_button">Добавить</button>
+            </form>
         </div>
-
         <div class="todo_cantainer">
 
 

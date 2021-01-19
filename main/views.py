@@ -14,3 +14,9 @@ def second(request):
 def third(request):
     return HttpResponse("This page is test3")
 
+def add_todo(request):
+    form = request.POST
+    text = form["todo_text"]
+    todo = TODO(text=text)
+    todo.save()
+    return HttpResponse("Форма получена")
