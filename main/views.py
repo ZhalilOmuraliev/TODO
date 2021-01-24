@@ -20,3 +20,14 @@ def add_todo(request):
     todo = TODO(text=text)
     todo.save()
     return HttpResponse("Форма получена")
+
+def delete_todo(request, id):
+    todo = TODO.objects.get(id=id)
+    todo.delete()
+    return redirect(test)
+
+def mark_todo(request, id):
+    todo  TODO.objects.get(id=id)
+    todo.is_favorite = True
+    todo.save()
+    return redirect(test)
