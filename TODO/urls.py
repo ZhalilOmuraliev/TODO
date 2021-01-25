@@ -1,4 +1,4 @@
-"""TODO URL Configuration
+"""todo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -26,8 +26,8 @@ urlpatterns = [
     path("test2", second),
     path("test3", third, name="homeWork"),
     path("add-todo", add_todo, name="add-todo")
-    path("delete-todo/<id>", delete_todo, name="delete-todo"),
-    path("mark-todo/<id>", mark_todo, name="mark-todo"),
-    pat("close-todo/<id>", close_todo, name="close-todo,")
+    path("delete-todo/<id>/", delete_todo, name="delete-todo"),
+    path("mark-todo/<id>/", mark_todo, name="mark-todo"),
+    path("close-todo/<id>/", close_todo, name="close-todo,"),
 ]   +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\
     +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
-from .models import todo
+from django.shortcuts import render, HttpResponse, redirect
+from .models import ToDo
 
 def homepage(request):
     return render(request, "index.html")
@@ -19,7 +19,7 @@ def add_todo(request):
     text = form["todo_text"]
     todo = ToDo(text=text)
     todo.save()
-    return HttpResponse("Форма получена")
+    return redirect(test)
 
 def delete_todo(request, id):
     todo = ToDo.objects.get(id=id)
@@ -27,7 +27,7 @@ def delete_todo(request, id):
     return redirect(test)
 
 def mark_todo(request, id):
-    todo  ToDo.objects.get(id=id)
+    todo = ToDo.objects.get(id=id)
     todo.is_favorite = True
     todo.save()
     return redirect(test)

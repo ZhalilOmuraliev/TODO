@@ -98,6 +98,10 @@ section{
     font-family: sans-serif;
 }
 
+.todo_item_header h4 a{
+    text-decoration: none;
+}
+
 .todo_item_header{
     display: flex;
     align-items: center;
