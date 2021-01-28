@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #4c3c66;
+  }
+  
+  body{
+    display: inline-block;
+  }
+  
+  section{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .create_container{
+    flex-direction: column;
+    padding: 12px 5px;
+    font-size: 18px;
+    display: inline-block;
+  }
+  
+  .input{
+    width: 250px;
+    height: 2px;
+    background-color: wheat;
+    border-radius: 2px;
+    padding: 15px 30px;
+    border: 1px solid gainsboro;
+    justify-content: space-around;
+    display: inline-block;
+    margin-bottom: 7px;
+    font-style: normal; 
+  }
+  
+  .button{
+    width: 150px;
+    height: 25px;
+    background-color: rgb(180, 126, 126);
+    border-radius: 2px;
+    padding: 15px 30px;
+    border: 2px solid gray;
+    justify-content: space-around;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(131, 131, 34);
+    cursor: pointer;
+  }
+  
+  .book_container{
+    display: inline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .book_item{
+    width: 70%;
+    height: 60%;
+    border: 2px solid rgb(144, 168, 144);
+    background-color: rgb(140, 145, 131);
+    border-radius: 3px;
+    padding: 50px 50px;
+    margin-bottom: 3px;
+  }
+  
+  .book_item h4{
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  
+  .book_item h3{
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  
+  .book_item p{
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  
+  .book_item_footer img{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .marked{
+    background-color: #3d8597;
+    border: 2px solid #27354e;
+  }
